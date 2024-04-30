@@ -5,106 +5,12 @@
             <button>Filtro</button>
         </div>
         <div class="list-items">
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
-            <div>
-                <p>Mon 1</p>
-                <small>breve descrição</small>
-            </div>
+            @for (mon of mons; track $index) {
+                <mon-list-item>
+                    <item-name>{{mon.name}}</item-name>
+                    <item-anime>{{mon.anime}}</item-anime>
+                </mon-list-item>
+            }
         </div>
     </section>
     <section id="filters">Filtros avançados</section>
